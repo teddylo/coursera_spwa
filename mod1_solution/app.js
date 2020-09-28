@@ -9,7 +9,7 @@ function LunchCheckController($scope) {
 	$scope.items = "";
 	$scope.msg="";
 	$scope.checkIfTooMuch = function () {
-		if (scope.items.length == 0) {
+		if ($scope.items.length == 0) {
 			$scope.msg="Please enter data first";
 		}
 		else if ($scope.items.split(',').length <= 3) {
