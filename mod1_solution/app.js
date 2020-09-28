@@ -19,6 +19,9 @@ function LunchCheckController($scope) {
 			$scope.msg="Too much!";
 		}
   	};
+	$scope.sayMessage = function() {
+		return $scope.msg;
+	}
 };
 
 })();
